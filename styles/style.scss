@@ -1,0 +1,182 @@
+@font-face {
+	font-family: "Saol sDisplay";
+	src: url("../assets/SaolDisplay-Regular.ttf");
+}
+
+@font-face {
+	font-family: "Gilroy";
+	src: url("../assets/Gilroy-Light.otf");
+}
+
+* {
+	margin: 0;
+
+	padding: 0;
+}
+/* 
+ #smooth-wrapper {
+  overflow: hidden;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+ 
+#smooth-content {
+  overflow: visible;
+  width: 100%;
+
+  /* set a height because the contents are position: absolute, thus natively there's no height 
+  height: 4000px;
+
+}
+ */
+body,
+html {
+	width: 100%;
+	position: relative;
+	height: 100%;
+	font-family: "Gilroy";
+}
+a {
+	text-decoration: none;
+	color: black;
+}
+nav {
+	// background-color: red;
+	margin: 0 auto;
+	margin-top: 10px;
+	display: flex;
+	width: 85%;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+
+	img {
+		height: 100%;
+	}
+
+	.links {
+		width: fit-content;
+		margin: 0 auto;
+
+		a {
+			color: rgb(0, 89, 255);
+			font-size: 15px;
+			font-weight: 500;
+			&:nth-child(2) {
+				margin-left: 40px;
+			}
+		}
+	}
+}
+
+h1 {
+	text-align: center;
+	font-size: 2.75rem;
+	line-height: 60px;
+	font-weight: 100;
+	margin-top: 50px;
+	font-family: "Saol Display";
+}
+
+.main {
+	width: 100%;
+	height: 100%;
+	margin-top: 120px;
+	overflow: hidden;
+	// background-color: red;
+	position: relative;
+
+	display: block;
+	gap: 10px;
+	min-height: 100vh;
+
+	.img-contain {
+		width: 100%;
+		position: relative;
+		display: block;
+
+		// background-color: yellow;
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			object-position: center center;
+
+			position: relative;
+		}
+	}
+
+	#one,
+	#six {
+		width: 15%; // width: 200px;
+		aspect-ratio: 2/3;
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+
+		img {
+			width: auto;
+		}
+	}
+
+	#six {
+		right: 0;
+		// background-color: pink;
+	}
+	#one {
+		left: 0;
+		// background-color: red;
+	}
+
+	.holder {
+		width: 15%;
+		height: fit-content;
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+
+		.img-contain {
+			aspect-ratio: 4/3;
+		}
+
+		div {
+			&:nth-child(1) {
+				margin-top: 0;
+			}
+			margin-top: 20px;
+		}
+	}
+
+	#holder-one {
+		left: 18%;
+	}
+	#holder-two {
+		right: 18%;
+	}
+
+	#video-player {
+		width: 30%;
+		// background-color: green;
+
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		height: 100%;
+		position: absolute;
+
+		video {
+			height: 100%;
+			width: 100%;
+			position: relative;
+			object-fit: cover;
+
+			object-position: center center;
+		}
+	}
+}

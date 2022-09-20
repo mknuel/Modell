@@ -1,0 +1,13 @@
+{
+	"devDependencies": {
+		"@parcel/transformer-sass": "2.7.0"
+	},
+	"dependencies": {
+		"gsap-trial": "^3.11.1",
+		"parcel": "2.7.0"
+	},
+	"scripts": {
+		"start": "parcel ./index.html",
+		"build": "npm i && parcel build ./index.html"
+	}
+}
